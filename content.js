@@ -1,6 +1,10 @@
 
 window.addEventListener('DOMContentLoaded', function () {
-    chrome.tabs.getCurrent(function(tab) {
-        chrome.tabs.remove(tab.id, function() { });
-    });
+    close_window()
+
+    function close_window() {
+        if (confirm("WAKE UP")) {
+          close();
+        }
+    }
 });
