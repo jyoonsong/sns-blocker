@@ -4,10 +4,6 @@
     "version": "1.0",
     "description": "block me from sns",
    
-    "browser_action": {
-      "default_icon": "icon.png"
-    },
-    
     "content_scripts":   [
       {
         "matches":   [
