@@ -3,27 +3,15 @@
     "name": "sns-blocker",
     "version": "1.0",
     "description": "block me from sns",
-   
-    "content_scripts":   [
-      {
-        "matches":   [
-                        "https://instagram.com/*",
-                        "http://instagram.com/*",
-                        "https://facebook.com/*",
-                        "http://facebook.com/*",
-                        "https://blog.naver.com/jaeyo_on/*",
-                        "http://blog.naver.com/jaeyo_on/*",
-                        "https://blog.jaeyoon.io/*",
-                        "http://blog.jaeyoon.io/*"
-                     ],
-        "js":        [ 
-                        "content.js" 
-                     ],
-        "run_at":    "document_idle"
-      }
-    ],
+
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    },
 
     "permissions": [
+      "tabs",
       "activeTab"
     ]
   }
