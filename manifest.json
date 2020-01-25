@@ -1,24 +1,24 @@
 {
     "manifest_version": 2,
-    "name": "snuwar",
+    "name": "sns-blocker",
     "version": "1.0",
-    "description": "WINNER OF THE SNU WAR",
+    "description": "block me from sns",
    
     "browser_action": {
       "default_icon": "icon.png"
-    },
-
-    "background": {
-      "scripts": [
-        "background.js"
-      ]
     },
     
     "content_scripts":   [
       {
         "matches":   [
-                        "https://snuwar.io/*",
-                        "http://snuwar.io/*"
+                        "https://instagram.com/*",
+                        "http://instagram.com/*",
+                        "https://facebook.com/*",
+                        "http://facebook.com/*",
+                        "https://blog.naver.com/jaeyo_on/*",
+                        "http://blog.naver.com/jaeyo_on/*",
+                        "https://blog.jaeyoon.io/*",
+                        "http://blog.jaeyoon.io/*"
                      ],
         "js":        [ 
                         "content.js" 
@@ -29,7 +29,7 @@
 
     "permissions": [
       "activeTab", 
-      "https://snuwar.io/*",
-      "http://snuwar.io/*"
+      "https://*",
+      "http://*"
     ]
   }
